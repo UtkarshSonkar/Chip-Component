@@ -1,0 +1,136 @@
+.container {
+  .search-container {
+    position: relative;
+    margin-bottom: 120px;
+    margin-top: 20px;
+
+    .chips-container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 60px;
+      border-bottom: 3px solid blue;
+      padding: 8px;
+      margin-left: 400px;
+      margin-right: 400px;
+      .chip {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        background-color: #e0e0e0;
+        border-radius: 16px;
+        font-size: 14px;
+        .icon {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin-right: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: black;
+          color: white;
+          font-family: Arial, sans-serif;
+          font-size: 10px;
+        }
+
+        button {
+          margin-left: 8px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          color: #333;
+          font-size: 16px;
+        }
+      }
+
+      input {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        padding: 4px 8px;
+        font-size: 14px;
+        background-color: transparent;
+
+        &::placeholder {
+          color: #999;
+        }
+      }
+    }
+
+    .suggestions-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      z-index: 100;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      overflow: hidden;
+      max-height: 200px;
+      overflow-y: auto;
+      width: max-content;
+      li {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid #e0e0e0; // assuming there is a border in the design
+        cursor: pointer;
+        &:hover,
+        &:focus {
+          background-color: #e9e9e9;
+        }
+      }
+
+      .icon {
+        width: 30px; // adjust based on your design
+        height: 30 px; // adjust based on your design
+        border-radius: 50%;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #6e6e6e; // placeholder color, use actual color from your design
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+      }
+      .name {
+        font-weight: bold;
+        margin-right: 8px;
+      }
+
+      .email {
+        color: #666;
+        font-size: 14px;
+      }
+      .suggestions-list.empty {
+        padding: 8px; // or as per your design needs
+        text-align: center;
+      }
+
+      .no-match {
+        color: #999;
+        font-style: italic;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .no-match {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-delay: 1s; /* This is the delay before the animation starts */
+      }
+    }
+  }
+}

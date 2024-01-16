@@ -1,0 +1,12 @@
+[
+  { "name": "John Doe", "email": "john.doe@test.org" },
+  { "name": "Jane Smith", "email": "jane.smith@demo.net" },
+  { "name": "Alex Johnson", "email": "alex.johnson@sample.io" },
+  { "name": "Emily Davis", "email": "emily.davis@sample.io" },
+  { "name": "Chris Brown", "email": "chris.brown@sample.io" },
+  { "name": "Lisa White", "email": "lisa.white@demo.net" },
+  { "name": "Mark Jones", "email": "mark.jones@mail.com" },
+  { "name": "Sarah Miller", "email": "sarah.miller@test.org" },
+  { "name": "David Wilson", "email": "david.wilson@demo.net" },
+  { "name": "Emma Taylor", "email": "emma.taylor@sample.io" }
+]
